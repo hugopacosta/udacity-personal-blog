@@ -1,0 +1,56 @@
+@import "all.css";
+
+.container{
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-template-rows: 10vh 78vh 10vh;
+    grid-template-areas: 
+        "hd"
+        "ct"
+        "ft";
+}
+
+.container > *{
+    border: 1px solid red;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.header{
+    grid-area: hd;
+}
+
+.sidebar{
+    display: none;
+}
+
+.content{
+    grid-area: ct;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+@media(min-width:900px){
+    .container{
+        display: grid;
+        grid-template-columns: 15vw 42vw 42vw;
+        grid-template-rows: 10vh 78vh 10vh;
+        grid-template-areas: 
+            "hd hd hd"
+            "sb ct ct"
+            "ft ft ft";
+    }
+
+    .sidebar{
+        display: block;
+        grid-area: sb;
+    }
+}
