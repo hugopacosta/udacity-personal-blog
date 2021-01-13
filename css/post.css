@@ -1,0 +1,109 @@
+.regular-content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post{
+    margin-bottom: 5vh;
+}
+
+.post-img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3vh;
+}
+
+.post-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-tag {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 2.5vh;
+}
+
+.post-title {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1.7vh;
+}
+
+.post-text {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #727780;
+    margin-bottom: 3.5vh;
+}
+
+.post-author {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 11px;
+}
+
+.img-post {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+@media(min-width:900px) {
+
+    .regular-content-container {
+        height: fit-content;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .post{
+        width: 28%;
+    }
+
+    .post-img-container {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .img-post {
+        width: 100%;
+        object-fit: contain;
+        border-collapse: separate;
+        box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    }
+
+    .post-tag {
+        margin-bottom: 1vh;
+    }
+
+    .post-text-container {
+        height: fit-content;
+        display: block;
+        
+    }
+}

@@ -1,0 +1,105 @@
+.highlight-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.highlight-img-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3vh;
+}
+
+.highlight-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlight-tag {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 2.5vh;
+}
+
+.highlight-title {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.4em;
+    margin-bottom: 2.7vh;
+}
+
+.highlight-text {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #727780;
+    margin-bottom: 3.5vh;
+}
+
+.highlight-author {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 11px;
+}
+
+.img-highlight {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+@media(min-width:900px) {
+
+    .highlight-container {
+        height: fit-content;
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px #e8e5e5 solid;
+    }
+
+    .highlight-img-container {
+        height: fit-content;
+        width: 60%;
+        min-width: 520px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .img-highlight {
+        width: 100%;
+        object-fit: contain;
+        border-collapse: separate;
+        box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+    }
+    .highlight-tag {
+        margin-bottom: 1vh;
+    }
+    .highlight-text-container {
+        height: fit-content;
+        display: block;
+        margin-left: 30px;
+        max-width: 40%;
+        min-width: 330px;
+    }
+
+}
