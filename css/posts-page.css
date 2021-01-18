@@ -1,5 +1,6 @@
 @import "fa.css";
 @import "header.css";
+@import "footer.css";
 
 html, body {
     margin: 0;
@@ -9,7 +10,7 @@ html, body {
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: minmax(7vh,120px) auto minmax(7vh,120px);
     grid-template-areas: 
         "hd"
         "ct"
@@ -132,57 +133,22 @@ html, body {
     background-color: black;
 }
 
-.footer-container {
-    width: 100%;
-    max-width: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+.back-button-container {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    padding-bottom: 15px;
 }
 
-.social-media-container {
-    height: 100%;
-    width: 20%;
-    min-width: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    color: white;
-    padding: 0px 30px
-
+.back-button-container > a {
+    text-decoration: none;
+    color: #494949;
 }
-
-.icon {
-    text-align: center;
-    margin: auto;
-}
-
-.credits-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.credits {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding-right: 30px;
-
-}
-
-
 
 @media(min-width:900px){
     .container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 12vh auto 10vh;
+        grid-template-rows: minmax(8vh,120px) auto minmax(8vh,120px);
         grid-template-areas: 
             "hd hd hd"
             "ct ct ct"

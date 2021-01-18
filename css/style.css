@@ -2,6 +2,7 @@
 @import "highlight.css";
 @import "post.css";
 @import "header.css";
+@import "footer.css";
 
 html, body {
     margin: 0;
@@ -11,7 +12,7 @@ html, body {
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: minmax(7vh,120px) auto minmax(7vh,120px);
     grid-template-areas: 
         "hd"
         "ct"
@@ -35,13 +36,18 @@ html, body {
 .footer{
     grid-area: ft;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
 }
 
 @media(min-width:900px){
     .container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 12vh auto 10vh;
+        grid-template-rows: minmax(8vh,120px) auto minmax(8vh,120px);
         grid-template-areas: 
             "hd hd hd"
             "ct ct ct"
