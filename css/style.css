@@ -1,6 +1,7 @@
-@import "all.css";
+@import "fa.css";
 @import "highlight.css";
 @import "post.css";
+@import "header.css";
 
 html, body {
     margin: 0;
@@ -16,48 +17,6 @@ html, body {
         "ct"
         "ft";
 }
-
-.nav-button-container{
-    
-}
-
-.nav-links-container{
-    display: none;
-}
-
-.title-container{
-    display: flex;
-    align-items: center;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.4em;
-}
-
-.title{
-    margin-left: 30px;
-}
-
-.header{
-    grid-area: hd;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-}
-
-.header-content{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    padding: 20px 30px;
-} 
 
 .sidebar{
     display: none;
@@ -87,49 +46,6 @@ html, body {
             "hd hd hd"
             "ct ct ct"
             "ft ft ft";
-    }
-
-    .header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .header-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .title-container{
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 700;
-        font-size: 1.5em;
-    }
-
-    .nav-button-container{
-        display: none;
-    }
-
-    .nav-links-container{
-        display: flex;
-        margin-right: 0px;
-        justify-content: space-evenly;
-    }
-    
-    .nav-links-container > * {
-        color: white;
-        margin: 30px;
-        text-decoration: none;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 700;
-        font-size: 1.2em;
     }
 
 }

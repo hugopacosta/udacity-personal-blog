@@ -26,6 +26,10 @@
     justify-content: center;
 }
 
+.post-text-container > * {
+    text-decoration: none;
+}
+
 .post-tag {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
@@ -41,6 +45,11 @@
     font-weight: 700;
     font-size: 1.5em;
     margin-bottom: 1.7vh;
+    color: black;
+}
+
+.post-title > * {
+    text-decoration: none;
 }
 
 .post-text {
@@ -104,6 +113,5 @@
     .post-text-container {
         height: fit-content;
         display: block;
-        
     }
 }
