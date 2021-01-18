@@ -39,7 +39,11 @@
     text-transform: uppercase;
     font-size: 15px;
     padding-right: 30px;
+}
 
+.credits > a {
+    text-decoration: none;
+    color: white;
 }
 
 
