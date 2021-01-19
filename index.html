@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <div class="header-content">
                 <a class="title-link" href="index.html">
                     <div class="title-container">
@@ -26,42 +26,55 @@
                 </a>
                 <div class="nav-container">
                     <nav>
-                        <div class="nav-links-container">
-                            <a href="index.html">Home</a>
-                            <a href="">
-                                <i class="fas fa-search"></i> Search
-                            </a>
-                            <a href="">About</a>
-                        </div>
+                        <ul class="nav-links-container">
+                            <li class="nav-link">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="">
+                                    <i class="fas fa-search"></i> Search
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="">About</a>
+                            </li>
+                        </ul>
                         <div class="nav-button-container">
                             <i class="fas fa-bars fa-2x"></i>
                         </div>
                     </nav>
                 </div>
             </div>
-        </div>
-        <div class="content-container">
-            <div class="highlight-container">
+        </header>
+        <main class="content-container">
+            <section class="highlight-container">
                 <div class="highlight-img-container">
-                    <a href="posts.html">
-                        <img src="assets/highlight.jpg" alt="Landscape with Mountains,a Lake and a Forest" class="img-highlight">
-                    </a>
+                    <figure class="figure-container">
+                        <a href="posts.html">
+                            <img src="assets/highlight.jpg" alt="Landscape with Mountains,a Lake and a Forest"
+                                class="img-highlight">
+                        </a>
+                        <figcaption class="img-caption">Puerto Varas, Chile</figcaption>
+                    </figure>
                 </div>
                 <div class="highlight-text-container">
                     <div class="highlight-tag">HIGHLIGHT</div>
                     <a href="posts.html">
-                        <div class="highlight-title">All you need to know to have an amazing trip to Puerto Varas</div>
+                        <h2 class="highlight-title">All you need to know to have an amazing trip to Puerto Varas</h2>
                     </a>
-                    <div class="highlight-text">Puerto Varas, also known as "La ciudad de las rosas" or “the city of
-                        roses”,
-                        is a city and commune located in the southern Chilean province of Llanquihue, in the Los Lagos
-                        Region.
-                    </div>
+                    <article>
+                        <h3 class="highlight-text">Puerto Varas, also known as "La ciudad de las rosas" or “the city of
+                            roses”,is a city and commune located in the southern Chilean province of
+                            Llanquihue, in the Los Lagos Region.</h3>
+                    </article>
                     <div class="highlight-author">HUGO COSTA</div>
+                    <a href="posts.html">
+                        <button class="highlight-button">Read More</button>
+                    </a>
                 </div>
-            </div>
+            </section>
             <div class="regular-content-container">
-                <div class="post">
+                <section class="post">
                     <div class="post-img-container">
                         <a href="posts.html">
                             <img src="assets/post1.jpg" alt="Round Bridge over a river" class="img-post">
@@ -73,8 +86,8 @@
                         </a>
                         <div class="post-author">HUGO COSTA</div>
                     </div>
-                </div>
-                <div class="post">
+                </section>
+                <section class="post">
                     <div class="post-img-container">
                         <a href="posts.html">
                             <img src="assets/post2.jpg" alt="City by the cliff, overlooking the ocean" class="img-post">
@@ -86,8 +99,8 @@
                         </a>
                         <div class="post-author">HUGO COSTA</div>
                     </div>
-                </div>
-                <div class="post">
+                </section>
+                <section class="post">
                     <div class="post-img-container">
                         <a href="posts.html">
                             <img src="assets/post3.jpg" alt="Huge doorway-like structure" class="img-post">
@@ -99,11 +112,12 @@
                         </a>
                         <div class="post-author">HUGO COSTA</div>
                     </div>
-                </div>
-                <div class="post">
+                </section>
+                <section class="post">
                     <div class="post-img-container">
                         <a href="posts.html">
-                            <img src="assets/post4.jpg" alt="A Castle in a tiny island,inside of a lake" class="img-post">
+                            <img src="assets/post4.jpg" alt="A Castle in a tiny island,inside of a lake"
+                                class="img-post">
                         </a>
                     </div>
                     <div class="post-text-container">
@@ -112,15 +126,15 @@
                         </a>
                         <div class="post-author">HUGO COSTA</div>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
-        <div class="footer">
+        </main>
+        <footer class="footer">
             <div class="footer-container">
                 <div class="social-media-container">
-                    <i class="fab fa-instagram icon fa-2x"></i>
                     <i class="fab fa-twitter icon fa-2x"></i>
                     <i class="fab fa-facebook icon fa-2x"></i>
+                    <i class="fab fa-linkedin icon fa-2x"></i>
                 </div>
                 <div class="credits-container">
                     <div class="credits">
@@ -130,7 +144,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 

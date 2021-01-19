@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <div class="header-content">
                 <a class="title-link" href="index.html">
                     <div class="title-container">
@@ -26,21 +26,27 @@
                 </a>
                 <div class="nav-container">
                     <nav>
-                        <div class="nav-links-container">
-                            <a href="index.html">Home</a>
-                            <a href="">
-                                <i class="fas fa-search"></i> Search
-                            </a>
-                            <a href="">About</a>
-                        </div>
+                        <ul class="nav-links-container">
+                            <li class="nav-link">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="">
+                                    <i class="fas fa-search"></i> Search
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="">About</a>
+                            </li>
+                        </ul>
                         <div class="nav-button-container">
                             <i class="fas fa-bars fa-2x"></i>
                         </div>
                     </nav>
                 </div>
             </div>
-        </div>
-        <div class="content-container">
+        </header>
+        <main class="content-container">
             <div class="post-background-image-container">
                 <div class="post-title-area">
                     <div class="post-title-container">
@@ -51,34 +57,43 @@
             <div class="post-area">
                 <div class="post-container">
                     <div class="post-author-container">
-                        <img class="author-image" src="assets/author.jpg">
+                        <div class="author-image-container">
+                            <img class="author-image" src="assets/author.jpg">
+                        </div>
                         <div class="name-date-container">
-                            <div class="author-name"> Hugo Costa - Developer</div>
+                            <div class="author-name"> Hi! My name is Hugo Costa and im currently a developer at JCM Consultores. <br>
+                                                      I have studied at UFMG in Brazil, and plan to keep learning more at Udacity. <br>
+                                                      This is my travel blog, enjoy!
+                            </div>
                             <div class="post-date"> January 17, 2021 </div>
                         </div>
                     </div>
                     <div class="post-text-container">
                         <div class="post-text">
-                            <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus justo, consequat
-                                    viverra vestibulum ac, commodo et justo. Aliquam sollicitudin velit velit, quis
-                                    varius ante
-                                    elementum quis. Nunc posuere eu felis eget auctor. Maecenas felis lacus, egestas vel
-                                    aliquam
-                                    in, fringilla id libero. Praesent eget convallis eros. Nunc mollis consectetur
-                                    tortor non
-                                    sodales. Phasellus est libero, lacinia a tristique vel, dignissim eget dui. In
-                                    dapibus
-                                    ultricies consectetur. In dolor magna, congue non elit eget, tincidunt euismod
-                                    libero.
-                                    Phasellus rutrum convallis nulla, eget ultricies sem luctus at. Nullam posuere
-                                    pretium odio,
-                                    non porttitor lorem aliquet sit amet. Sed sollicitudin, mi eu hendrerit laoreet,
-                                    orci est
-                                    iaculis ante, quis tincidunt nisl massa pellentesque elit. Vestibulum laoreet tellus
-                                    quis
-                                    nisi elementum aliquet.</b></p>
+                            <p><q cite="www.lipsum.com"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nulla metus justo, consequat
+                                        viverra vestibulum ac, commodo et justo. Aliquam sollicitudin velit velit, quis
+                                        varius ante
+                                        elementum quis. Nunc posuere eu felis eget auctor. Maecenas felis lacus, egestas
+                                        vel
+                                        aliquam
+                                        in, fringilla id libero. Praesent eget convallis eros. Nunc mollis consectetur
+                                        tortor non
+                                        sodales. Phasellus est libero, lacinia a tristique vel, dignissim eget dui. In
+                                        dapibus
+                                        ultricies consectetur. In dolor magna, congue non elit eget, tincidunt euismod
+                                        libero.
+                                        Phasellus rutrum convallis nulla, eget ultricies sem luctus at. Nullam posuere
+                                        pretium odio,
+                                        non porttitor lorem aliquet sit amet. Sed sollicitudin, mi eu hendrerit laoreet,
+                                        orci est
+                                        iaculis ante, quis tincidunt nisl massa pellentesque elit. Vestibulum laoreet
+                                        tellus
+                                        quis
+                                        nisi elementum aliquet.</b></q></p>
 
-                            <p>Vestibulum mi quam, aliquam quis convallis vitae, bibendum non nisi. Quisque mattis nisl
+                            <p><i><u>Vestibulum</u> mi quam, aliquam quis convallis vitae, bibendum non nisi.</i>Quisque
+                                mattis nisl
                                 ullamcorper elit feugiat vulputate. Suspendisse non sapien dapibus, hendrerit lectus
                                 eget,
                                 consectetur est. Ut ipsum sem, tincidunt et egestas ut, tempus eu ex. Nullam eu elit
@@ -127,13 +142,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
+        </main>
+        <footer class="footer">
             <div class="footer-container">
                 <div class="social-media-container">
-                    <i class="fab fa-instagram icon fa-2x"></i>
                     <i class="fab fa-twitter icon fa-2x"></i>
                     <i class="fab fa-facebook icon fa-2x"></i>
+                    <i class="fab fa-linkedin icon fa-2x"></i>
                 </div>
                 <div class="credits-container">
                     <div class="credits">
@@ -143,7 +158,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 

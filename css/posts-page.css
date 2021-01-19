@@ -27,8 +27,8 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     overflow: auto;
+    height: 100%;
 }
 
 .post-background-image-container{
@@ -65,11 +65,19 @@ html, body {
     color: white;
 }
 
-.post-container {
+.post-area{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+
+}
+
+.post-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
 
     padding: 20px 30px;
 }
@@ -77,34 +85,55 @@ html, body {
 .post-author-container{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
     width: 100%;
-    height: 80px;
+    height: fit-content;
     border-bottom: 1px #e8e5e5 solid;
-    padding-bottom: 20px;
+}
+
+.author-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-height: 110px;
 }
 
 .author-image{
-    height: 100%;
     border-radius: 50%;
+    height:60%;
 }
 
 .name-date-container{
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
+    margin-left: 15px;
+}
+
+.author-name {
+    color: #494949;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 14px;
+    
+}
+
+.post-date {
+    margin-top: 8px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: black;
-    font-size: 11px;
-    margin-left: 20px;
-}
-
-.author-name {
-    border-bottom: 1px #e8e5e5 solid;
-    padding-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 10px;
 }
 
 .post-text-container{
@@ -205,7 +234,7 @@ html, body {
     .post-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: center;
 
         padding: 20px 30px;
@@ -230,18 +259,14 @@ html, body {
         flex-direction: column;
         justify-content: space-around;
         align-content: center;
-        font-family: 'Public Sans', sans-serif;
-        font-weight: 400;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        color: black;
-        font-size: 11px;
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
     }
-
+    
     .author-name {
-        border-bottom: 1px #e8e5e5 solid;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+        line-height: 18px;
     }
 
     .footer{

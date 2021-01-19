@@ -43,6 +43,7 @@
     font-family: 'Public Sans', sans-serif;
     font-weight: 700;
     font-size: min(10vw,2.5em);
+    margin-top: 0;
     margin-bottom: 2.7vh;
 }
 
@@ -51,7 +52,7 @@
     font-size: min(4.6vw,1em);
     font-weight: 300;
     color: #727780;
-    margin-bottom: 3.5vh;
+    margin-bottom: 1.5vh;
 }
 
 .highlight-author {
@@ -68,6 +69,31 @@
     width: 100%;
     border-radius: 8px;
     object-fit: contain;
+}
+
+.figure-container{
+    margin: 0px;
+    text-align: center;
+}
+
+.img-caption {
+    padding: 5px 5px;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #727780;
+}
+
+.highlight-button {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 1.5vh;
+    padding: 5px;
+    font-family: 'Merriweather', serif;
+    font-size: 10px;
+    width: 20%;
+    min-width: 70px;
 }
 
 @media(min-width:900px) {
